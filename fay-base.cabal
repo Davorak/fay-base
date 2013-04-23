@@ -25,4 +25,17 @@ library
   exposed-modules:   Prelude
                     ,FFI
                     ,Data.Data
-  build-depends: base == 4.*, fay >= 0.14.3.0
+  other-modules:     Language.Fay.FFI
+                    ,Fay.Types
+                    ,Paths_fay_base_m
+                    ,Fay.Compiler.ModuleScope
+  build-depends: base == 4.*
+               , haskell-src-exts                                           
+               , containers
+               , data-default
+               , mtl
+               , filepath
+               , data-default
+               , haskell-src-exts
+               , mtl
+
